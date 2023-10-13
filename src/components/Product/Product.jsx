@@ -2,7 +2,8 @@ import './Product.css';
 import PropTypes from 'prop-types'
 
 const Product = (props) => {
-    const { name, price, shipping, stock, img, seller, quantity, ratings } = props.product;
+    const { name, price, img, seller, ratings } = props.product;
+    const cartAdd = props.cartHandler;
     return (
         <div className="product">
             <img src={img} alt="" />
@@ -12,12 +13,14 @@ const Product = (props) => {
                 <p>Manufacturer: {seller}</p>
                 <p>rating: {ratings} stars</p>
             </div>
-            <button className='product-cart'>add to cart</button>
+            <button onClick={() => cartAdd(props.product)} className='product-cart'>add to cart</button>
         </div>
     );
 };
 
 Product.propTypes = {
-    product: PropTypes.object, // Use the appropriate PropTypes type
+    product: PropTypes.object,
+    cartHandler: PropTypes.object,
+     // Use the appropriate PropTypes type
 };
 export default Product;
