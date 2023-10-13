@@ -1,13 +1,33 @@
-.product{
+
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+.product {
     width: 300px;
     height: 508px;
     border: 1px solid #95A0A7;
     border-radius: 8px;
 }
 
-.product img{
+.product img {
     width: 286px;
     height: 286px;
     margin: 7px;
     border-radius: 8px;
+}
+
+.product-info {
+    font-family: Lato;
+    
+    padding-left: 14px;
+}
+
+.product-name{
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 600;
+    margin: 0px;
+}
+
+.product-info p{
+    margin: 11px 0;
 }
