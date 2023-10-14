@@ -16,9 +16,16 @@ const Shop = () => {
 
     useEffect(() =>{
         const storeCart = getShoppingCart();
-        console.log(storeCart)
+        //step-1: get id
+        for (const id in storeCart){
+            //step-2: get the product by using id
+            const addedProduct = products.find(product => product.id === id);
+            //step-3: get the quantity of product
+            const quantity = storeCart[id];
+            addedProduct.quantity = quantity;
+        }
 
-    },[])
+    },[products])
     const cartHandler = product =>{
         setCart([...cart, product]);
         addToDb(product.id)
