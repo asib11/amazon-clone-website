@@ -5,7 +5,7 @@
 
 .cart-container{
     background-color: #FF9900;
-    opacity: 30%;
+    padding-left: 10px;
 }
 
 .product-container{
@@ -14,4 +14,17 @@
     grid-template-columns: repeat(3, 1fr);
     gap:45px
     
+}
+
+/* media quary */
+
+@media only screen and (max-width: 576px) {
+    .shop-container{
+        grid-template-columns: 1fr 1fr;
+    }
+    .product-container{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        margin: 30px 22px 0 32px;
+    }
 }
