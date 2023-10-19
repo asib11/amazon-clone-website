@@ -6,6 +6,7 @@ const Header = () => {
         <nav className='header'>
             <img src={logo} alt="" />
             <div>
+                <a href="/">Shop</a>
                 <a href="/order">Order</a>
                 <a href="/orderReview">Order Review</a>
                 <a href="/manageInventroy">Manage Inventory</a>
