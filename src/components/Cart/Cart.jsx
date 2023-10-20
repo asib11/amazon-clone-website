@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
   import { faTrashCan } from '@fortawesome/free-solid-svg-icons'
 
-const Cart = ({ cart, clearCarthandler }) => {
+const Cart = ({ cart, clearCarthandler, children }) => {
     // const cart = props.cart; option-1
     //const {cart} = props; option-2
 
@@ -30,12 +30,14 @@ const Cart = ({ cart, clearCarthandler }) => {
             <p>tax: ${tax.toFixed(2)}</p>
             <h6>Grand Total Price: ${grandTotal.toFixed(2)}</h6>
             <button onClick={clearCarthandler} className='clear-btn'><span>Clear Cart</span><FontAwesomeIcon icon={faTrashCan}/></button>
+            {children}
         </div>
     );
 };
 
 Cart.propTypes = {
     cart: PropTypes.array,
-    clearCarthandler: PropTypes.func, // Use the appropriate PropTypes type
+    clearCarthandler: PropTypes.func,
+    children:PropTypes.any // Use the appropriate PropTypes type
 };
 export default Cart;

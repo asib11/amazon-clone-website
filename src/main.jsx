@@ -13,6 +13,7 @@ import Inventory from './components/Inventory/Inventory.jsx';
 // import OrderReview from './components/OrderReview/OrderReview.jsx';
 import Login from './components/Login/Login.jsx';
 import cartProductLoader from './loader/Loader.js';
+import Cheakout from './components/Cheakout/Cheakout.jsx';
 
 const router = createBrowserRouter([
   {
@@ -28,10 +29,10 @@ const router = createBrowserRouter([
         element:<Order></Order>,
         loader: cartProductLoader,
       },
-      // {
-      //   path: '/orderReview',
-      //   element:<OrderReview></OrderReview>
-      // },
+      {
+        path: '/cheakout',
+        element:<Cheakout></Cheakout>
+      },
       {
         path: '/manageInventroy',
         element:<Inventory></Inventory>
