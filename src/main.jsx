@@ -10,7 +10,7 @@ import Home from './components/Home/Home.jsx';
 import Shop from './components/Shop/Shop.jsx';
 import Order from './components/Order/Order.jsx';
 import Inventory from './components/Inventory/Inventory.jsx';
-import OrderReview from './components/OrderReview/OrderReview.jsx';
+// import OrderReview from './components/OrderReview/OrderReview.jsx';
 import Login from './components/Login/Login.jsx';
 import cartProductLoader from './loader/Loader.js';
 
@@ -28,10 +28,10 @@ const router = createBrowserRouter([
         element:<Order></Order>,
         loader: cartProductLoader,
       },
-      {
-        path: '/orderReview',
-        element:<OrderReview></OrderReview>
-      },
+      // {
+      //   path: '/orderReview',
+      //   element:<OrderReview></OrderReview>
+      // },
       {
         path: '/manageInventroy',
         element:<Inventory></Inventory>
