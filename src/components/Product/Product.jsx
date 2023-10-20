@@ -20,7 +20,7 @@ const Product = (props) => {
 
 Product.propTypes = {
     product: PropTypes.object,
-    cartHandler: PropTypes.object,
+    cartHandler: PropTypes.func,
      // Use the appropriate PropTypes type
 };
 export default Product;
