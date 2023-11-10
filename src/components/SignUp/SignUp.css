@@ -64,7 +64,7 @@ p {
     margin-left: 76px;
 }
 
-p span {
+p a{
     color: #F90;
     font-family: Lato;
     font-size: 15px;
@@ -72,6 +72,7 @@ p span {
     font-weight: 400;
     line-height: normal;
     letter-spacing: 0.038px;
+    text-decoration: none;
 }
 
 .google-btn {
@@ -88,4 +89,9 @@ p span {
     font-weight: 400;
     line-height: normal;
     letter-spacing: 0.085px;
+}
+
+p small {
+    color: red;
+    margin-top: 20px;
 }

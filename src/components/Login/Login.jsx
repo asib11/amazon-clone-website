@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './Login.css';
 
 const Login = () => {
@@ -14,7 +15,7 @@ const Login = () => {
                     <input type="passowrd" name="passowrd" id="" required/>
                 </div>
                 <input type="submit" className='btn-submit' value="Login" />
-                <p>New to Amazon-Clone? <span>Create New Account</span></p>
+                <p>New to Amazon-Clone? <Link to='/signup'>Create New Account</Link> </p>
                 <p>or</p>
                 <input type="submit" className='google-btn' value="Continue With Google" />
             </form>
