@@ -1,0 +1,91 @@
+.login-container {
+    width: 500px;
+    height: 700px;
+    border-radius: 8px;
+    border: 1px solid #95A0A7;
+    background: #FFF;
+    margin: 20px auto 0px;
+    padding-bottom: 42px;
+    
+}
+
+h4 {
+    font-family: Lato;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+}
+
+.form-control {
+    margin-bottom: 44px;
+}
+
+.form-control label {
+    display: block;
+    font-family: Lato;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+
+}
+
+.form-control input {
+    width: 415px;
+    height: 55px;
+    border-radius: 5px;
+    border: 1px solid #95A0A7;
+}
+
+.btn-submit {
+    width: 418px;
+    height: 57px;
+    border-radius: 5px;
+    border: none;
+    background: rgba(255, 153, 0, 0.30);
+    font-family: Lato;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.btn-submit:hover {
+    background: rgba(255, 153, 0, 0.60);
+}
+
+p {
+    font-family: Lato;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.038px;
+    color: #2A414F;
+    margin-left: 76px;
+}
+
+p span {
+    color: #F90;
+    font-family: Lato;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.038px;
+}
+
+.google-btn {
+    width: 417px;
+    height: 55px;
+    border-radius: 5px;
+    border: 1px solid #95A0A7;
+    color: #2A414F;
+
+    /* Body 1 */
+    font-family: Lato;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.085px;
+}
