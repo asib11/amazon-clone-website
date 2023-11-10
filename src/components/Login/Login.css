@@ -90,3 +90,9 @@ p a{
     line-height: normal;
     letter-spacing: 0.085px;
 }
+
+.hide-show{
+    color: black;
+    margin: 0;
+    padding: 0;
+}

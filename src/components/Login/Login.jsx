@@ -1,9 +1,10 @@
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import './Login.css';
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 import { AuthContext } from '../Provider/AuthProvider';
 
 const Login = () => {
+    const [show, setShow] = useState(false);
     const {signIn} = useContext(AuthContext);
     const navigate = useNavigate();
     const loaction = useLocation();
@@ -37,7 +38,14 @@ const Login = () => {
                 </div>
                 <div className="form-control">
                     <label htmlFor="password">Password</label>
-                    <input type="password" name="password" id="" required/>
+                    <input type={show? 'text': "password"} name="password" id="" required/>
+                    <p className='hide-show' onClick={()=> setShow(!show)}>
+                        <small>
+                            {
+                                show? <span>hide password</span>: <span>show password</span>
+                            }
+                        </small>
+                        </p>
                 </div>
                 <input type="submit" className='btn-submit' value="Login" />
                 <p>New to Amazon-Clone? <Link to='/signup'>Create New Account</Link> </p>
